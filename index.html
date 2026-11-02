@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080912">
+  <meta name="description" content="Discover the ideas, people and experiences worth showing up for. Find your next event with Fora.">
+  <title>Fora — Find your people, out there.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Fora home"><span class="brand-symbol"><span></span><span></span><span></span></span><span>fora<span class="brand-dot">.</span></span></a>
+    <nav class="main-nav" aria-label="Main navigation"><a class="nav-link active" href="#home">Home</a><a class="nav-link" href="#events">Explore events</a><a class="nav-link" href="#about">About</a><a class="nav-link" href="#contact">Contact</a></nav>
+    <div class="header-actions"><button id="theme-toggle" class="theme-toggle" aria-label="Switch to light theme" title="Switch theme"><span class="theme-glyph">☼</span></button><a class="button button-small button-primary" href="#events">Find your next <span>↗</span></a><button class="menu-toggle" id="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button></div>
+  </header>
+  <main id="home">
+    <section class="hero">
+      <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+      <div class="hero-content reveal">
+        <div class="eyebrow"><span class="pulse-dot"></span> THE WORLD IS BETTER OUT THERE</div>
+        <h1>Make your<br>next moment<br><span class="gradient-text">mean something.</span></h1>
+        <p class="hero-copy">Find the rooms, ideas and people that make you feel more alive. Your next favorite story starts here.</p>
+        <div class="hero-ctas"><a class="button button-primary" href="#events">Explore events <span>↗</span></a><a class="button button-quiet" href="#about"><span class="play-icon">▶</span> See what we're about</a></div>
+        <div class="hero-trust"><div class="mini-avatars"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=80&q=80" alt="Fora community member"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=80&q=80" alt="Fora community member"><img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=80&q=80" alt="Fora community member"><span>+</span></div><p><strong>12,000+</strong> curious people already out there</p></div>
+      </div>
+      <div class="hero-visual reveal reveal-delay">
+        <div class="hero-photo hero-photo-main"><img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1300&q=88" alt="A crowd enjoying a live music festival at night"><div class="photo-vignette"></div></div>
+        <div class="glass-card hero-event-card"><div class="card-label"><span class="pulse-dot"></span> NEXT UP · BENGALURU</div><div class="hero-event-title">Afterglow<br><em>Sessions</em></div><div class="hero-event-foot"><span>Live music · Nov 21</span><span class="round-arrow">↗</span></div></div>
+        <div class="floating-note"><span class="note-spark">✳</span><span>GO FIND<br>YOUR PEOPLE</span></div><div class="visual-index">01 <span>—</span> 04</div>
+      </div>
+      <a href="#events" class="scroll-cue"><span class="scroll-line"></span> SCROLL TO DISCOVER</a>
+    </section>
+
+    <section class="stats-strip" aria-label="Fora at a glance"><div class="stat"><strong>240<span>+</span></strong><span>Curated events</span></div><div class="stat"><strong>12<span>k</span></strong><span>Community members</span></div><div class="stat"><strong>6</strong><span>Event categories</span></div><div class="stats-note">Real plans.<br><span>Real life.</span></div></section>
+
+    <section id="events" class="events-section section-wrap">
+      <div class="section-heading reveal"><div><div class="eyebrow">YOUR CITY, A LITTLE MORE ALIVE</div><h2>Plans worth<br><span class="gradient-text">showing up for.</span></h2></div><a href="#event-grid" class="text-arrow">See all experiences <span>↗</span></a></div>
+      <div class="featured-banner reveal"><img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?auto=format&fit=crop&w=1600&q=85" alt="A live concert stage filled with light" loading="lazy"><div class="banner-overlay"></div><div class="featured-badge"><span class="pulse-dot"></span> EDITOR'S PICK</div><div class="featured-copy"><span class="eyebrow">NOVEMBER 21 · BENGALURU</span><h3>Afterglow<br><em>Sessions</em></h3><p>One night. Three boundary-pushing artists. A room that feels like yours.</p><div class="countdown" data-countdown="2026-11-21T19:30:00+05:30"><div><b data-days>--</b><span>DAYS</span></div><i>:</i><div><b data-hours>--</b><span>HRS</span></div><i>:</i><div><b data-minutes>--</b><span>MIN</span></div><i>:</i><div><b data-seconds>--</b><span>SEC</span></div></div><button class="button button-primary" data-event="afterglow">Discover the night <span>↗</span></button></div><div class="featured-index">FEATURED EXPERIENCE &nbsp; / &nbsp; 01</div></div>
+      <div class="event-controls"><div class="filter-list" id="filter-list" aria-label="Filter by event category"></div><label class="search-control"><span>⌕</span><input id="event-search" type="search" placeholder="Search events, places, moods..." aria-label="Search events"><kbd>⌘ K</kbd></label></div>
+      <div class="event-grid" id="event-grid" aria-live="polite"></div><div class="empty-state" id="empty-state" hidden><span>✳</span><h3>No plans found yet.</h3><p>Try another search or choose a different category.</p></div>
+    </section>
+
+    <section class="manifesto" id="about"><div class="manifesto-glow"></div><div class="eyebrow reveal">A BETTER WAY TO BE OUT THERE</div><h2 class="reveal">Life doesn't happen<br>in another <span class="gradient-text">tab.</span></h2><p class="reveal">Fora is your place to find the experiences that turn a regular Tuesday into a story you tell for years. Thoughtfully picked, locally loved, always worth leaving home for.</p><a href="#why-fora" class="button button-outline reveal">A little more about us <span>↗</span></a><div class="manifesto-stamp">LESS<br>SCROLL.<br><span>MORE SOUL.</span></div></section>
+
+    <section id="why-fora" class="why-section section-wrap"><div class="section-heading reveal"><div><div class="eyebrow">THE FORA DIFFERENCE</div><h2>Good plans.<br><span class="gradient-text">Better people.</span></h2></div><p class="heading-aside">A little less algorithm.<br>A lot more feeling.</p></div><div class="why-grid"><article class="why-card reveal"><div class="why-number">01</div><div class="why-icon icon-violet">✳</div><h3>Curated with a pulse</h3><p>We pick the gatherings with a point of view, the kind that make you glad you went.</p></article><article class="why-card reveal"><div class="why-number">02</div><div class="why-icon icon-blue">◎</div><h3>Your city, unlocked</h3><p>Find the independent venues, creative collectives and local gems hiding in plain sight.</p></article><article class="why-card reveal"><div class="why-number">03</div><div class="why-icon icon-pink">↗</div><h3>Connection, IRL</h3><p>Come for the thing. Stay for the people you didn't know you were looking for.</p></article></div></section>
+
+    <section class="testimonial-section"><div class="testimonial-orb"></div><div class="testimonial-content reveal"><div class="eyebrow">KIND WORDS FROM OUT THERE</div><div class="quote-mark">“</div><blockquote>I'd been in Bengaluru for months and still felt like a visitor. One Fora supper club later, I had a group chat, a favorite corner table, and plans for next weekend.</blockquote><div class="quote-author"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Portrait of Ananya Rao" loading="lazy"><div><strong>Ananya Rao</strong><span>Fora member since 2025</span></div><span class="quote-stars">★★★★★</span></div></div><div class="testimonial-art"><img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=900&q=85" alt="Friends sharing a meal at a candlelit long table" loading="lazy"><span>THE TABLE IS<br>ALWAYS BIG ENOUGH.</span></div></section>
+
+    <section class="newsletter-section"><div class="newsletter-glow"></div><div class="eyebrow">A NOTE FROM THE GOOD SIDE OF YOUR INBOX</div><h2>Make room for<br><span class="gradient-text">a little more life.</span></h2><p>One thoughtful list of things worth doing, every other week.</p><form id="newsletter-form" class="newsletter-form"><label for="newsletter-email" class="sr-only">Email address</label><input type="email" id="newsletter-email" placeholder="Your email address" required><button type="submit" aria-label="Subscribe">↗</button></form><small id="newsletter-message">No spam. No noise. Unsubscribe whenever.</small></section>
+    <section id="contact" class="contact-bar"><div><div class="eyebrow">SOMETHING ON YOUR MIND?</div><h2>Let's make it <span class="gradient-text">happen.</span></h2></div><a class="button button-primary" href="mailto:hello@fora.events">Say hello <span>↗</span></a></section>
+  </main>
+  <footer class="site-footer"><div class="footer-top"><div class="footer-brand"><a class="brand" href="#home"><span class="brand-symbol"><span></span><span></span><span></span></span><span>fora<span class="brand-dot">.</span></span></a><p>Find your people,<br>out there.</p></div><div class="footer-links"><div><span class="footer-label">EXPLORE</span><a href="#events">All events</a><a href="#events" data-footer-category="Music">Music & culture</a><a href="#events" data-footer-category="Technology">Ideas & tech</a></div><div><span class="footer-label">FORA</span><a href="#about">Our story</a><a href="#why-fora">Why Fora</a><a href="#contact">Get in touch</a></div><div><span class="footer-label">FOLLOW THE FEELING</span><a href="https://www.instagram.com/" target="_blank" rel="noreferrer"><span class="social-icon" aria-hidden="true">◎</span> Instagram ↗</a><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"><span class="social-icon social-in" aria-hidden="true">in</span> LinkedIn ↗</a><a href="https://www.youtube.com/" target="_blank" rel="noreferrer"><span class="social-icon" aria-hidden="true">▷</span> YouTube ↗</a></div></div></div><div class="footer-bottom"><span>© 2026 FORA EXPERIENCES</span><span>MADE FOR THE MOMENTS BETWEEN THE PLANS</span><a href="#home">BACK TO TOP ↑</a></div></footer>
+
+  <dialog id="event-dialog" class="event-dialog"><button class="dialog-close" aria-label="Close event details">×</button><div id="dialog-content"></div></dialog>
+  <dialog id="register-dialog" class="register-dialog"><button class="dialog-close" aria-label="Close registration">×</button><div class="eyebrow">GOOD CALL. SAVE YOUR SPOT.</div><h2>You're going<br><span class="gradient-text">somewhere.</span></h2><p class="register-event-name" id="register-event-name"></p><form id="registration-form" novalidate><input type="hidden" id="selected-event" name="event"><label>Your name<input name="name" required minlength="2" autocomplete="name" placeholder="e.g. Alex Morgan"></label><label>Email address<input type="email" name="email" required autocomplete="email" placeholder="you@example.com"></label><label>Phone number<input type="tel" name="phone" required autocomplete="tel" pattern="[+0-9() .-]{7,20}" placeholder="e.g. +91 98765 43210"></label><p class="form-error" id="form-error" role="alert"></p><button class="button button-primary submit-button" type="submit">Save my spot <span>↗</span></button></form><div class="success-message" id="success-message" hidden><span class="success-spark">✳</span><h3>You're on the list.</h3><p>Your spot is saved on this device. Watch your inbox for the details.</p><button class="button button-primary" id="done-button">Lovely, thanks</button></div></dialog>
+  <script src="script.js"></script>
+</body>
+</html>
